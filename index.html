@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mario Andiko Dwi Saputra | Portofolio</title>
+  <meta name="description" content="Portofolio Mario Andiko Dwi Saputra: UI/UX, desain grafis, dan web development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23514240'%3E%3Cellipse cx='12' cy='16.5' rx='5' ry='4.2'/%3E%3Cellipse cx='5.2' cy='11' rx='2.2' ry='2.8'/%3E%3Cellipse cx='9.3' cy='6.6' rx='2.3' ry='3'/%3E%3Cellipse cx='14.7' cy='6.6' rx='2.3' ry='3'/%3E%3Cellipse cx='18.8' cy='11' rx='2.2' ry='2.8'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ikon yang dipakai berulang -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="paw" viewBox="0 0 24 24">
+      <ellipse cx="12" cy="16.5" rx="5" ry="4.2" fill="currentColor"/>
+      <ellipse cx="5.2" cy="11" rx="2.2" ry="2.8" fill="currentColor"/>
+      <ellipse cx="9.3" cy="6.6" rx="2.3" ry="3" fill="currentColor"/>
+      <ellipse cx="14.7" cy="6.6" rx="2.3" ry="3" fill="currentColor"/>
+      <ellipse cx="18.8" cy="11" rx="2.2" ry="2.8" fill="currentColor"/>
+    </symbol>
+    <symbol id="spark" viewBox="0 0 24 24">
+      <path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="catface" viewBox="0 0 100 100">
+      <path d="M12 44 L17 8 L44 25Z M88 44 L83 8 L56 25Z" style="fill:var(--fur,#CFC5B4)"/>
+      <circle cx="50" cy="58" r="38" style="fill:var(--fur,#CFC5B4)"/>
+      <ellipse cx="35" cy="55" rx="5" ry="7" fill="#514240"/>
+      <ellipse cx="65" cy="55" rx="5" ry="7" fill="#514240"/>
+      <path d="M45 66 Q50 63 55 66 Q52 72 50 73 Q48 72 45 66Z" fill="#514240"/>
+      <path d="M50 73 V77 M50 77 Q44 83 38 78 M50 77 Q56 83 62 78" fill="none" stroke="#514240" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <div class="wrap">
+
+    <!-- Bilah atas -->
+    <header class="topbar">
+      <p class="label">Designer<br>&amp; Creative</p>
+      <div class="topbar__mid" aria-hidden="true"><svg class="ico ico--lg"><use href="#paw"/></svg></div>
+      <p class="label label--right">Ayo buat sesuatu<br>yang hangat</p>
+    </header>
+
+    <!-- Judul besar -->
+    <section class="title" aria-labelledby="judul">
+      <span class="title__circle" aria-hidden="true"></span>
+      <span class="title__burst" aria-hidden="true"><svg class="ico"><use href="#paw"/></svg></span>
+      <h1 id="judul">Portfolio</h1>
+      <p class="tags">UI/UX <i>•</i> Desain Grafis <i>•</i> Web Dev</p>
+    </section>
+
+    <!-- Perkenalan -->
+    <section class="hero" aria-label="Perkenalan">
+      <div class="hero__text">
+        <p class="hello"><svg class="ico"><use href="#spark"/></svg> Halo, saya</p>
+        <h2 class="name">Mario Andiko<br>Dwi Saputra</h2>
+        <p class="tagline">Mahasiswa Informatika yang merancang antarmuka, web, dan desain grafis.</p>
+        <p class="intro">Memadukan logika pemrograman, kepekaan visual, dan riset kecerdasan artifisial untuk membuat solusi digital yang fungsional dan nyaman digunakan.</p>
+        <div class="pills">
+          <span class="pill pill--line"><svg class="ico" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></svg> Bengkulu, Indonesia</span>
+          <span class="pill pill--sand">Terbuka untuk kolaborasi</span>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage__panel" aria-hidden="true"></div>
+        <button class="cat-btn" type="button" aria-label="Sapa kucingnya">
+          <svg class="cat" viewBox="0 0 400 460" role="img" aria-label="Ilustrasi kucing yang matanya mengikuti kursor">
+            <!-- badan -->
+            <path d="M52 460 C52 362 118 322 200 322 C282 322 348 362 348 460Z" fill="#CFC5B4"/>
+            <path d="M126 330 Q200 372 274 330" fill="none" stroke="#514240" stroke-width="14" stroke-linecap="round"/>
+            <circle cx="200" cy="372" r="17" fill="#F1ECE2" stroke="#514240" stroke-width="5"/>
+            <use href="#paw" x="190" y="362" width="20" height="20" style="color:#514240"/>
+            <!-- telinga -->
+            <path d="M84 156 L98 38 L178 98Z" fill="#CFC5B4"/>
+            <path d="M316 156 L302 38 L222 98Z" fill="#CFC5B4"/>
+            <path d="M108 120 L113 68 L152 98Z" fill="#514240" opacity=".55"/>
+            <path d="M292 120 L287 68 L248 98Z" fill="#514240" opacity=".55"/>
+            <!-- kepala -->
+            <ellipse cx="200" cy="204" rx="138" ry="116" fill="#CFC5B4"/>
+            <path d="M200 96 V128 M172 102 L180 130 M228 102 L220 130" fill="none" stroke="#514240" stroke-width="9" stroke-linecap="round"/>
+            <ellipse cx="116" cy="246" rx="22" ry="14" fill="#646556" opacity=".25"/>
+            <ellipse cx="284" cy="246" rx="22" ry="14" fill="#646556" opacity=".25"/>
+            <!-- mata -->
+            <g class="eye"><ellipse cx="148" cy="202" rx="28" ry="32" fill="#F1ECE2"/><g class="pupil" data-range="9"><ellipse cx="148" cy="204" rx="14" ry="23" fill="#514240"/><circle cx="143" cy="195" r="5" fill="#F1ECE2"/></g></g>
+            <g class="eye"><ellipse cx="252" cy="202" rx="28" ry="32" fill="#F1ECE2"/><g class="pupil" data-range="9"><ellipse cx="252" cy="204" rx="14" ry="23" fill="#514240"/><circle cx="247" cy="195" r="5" fill="#F1ECE2"/></g></g>
+            <!-- hidung dan mulut -->
+            <path d="M187 240 Q200 233 213 240 Q207 255 200 257 Q193 255 187 240Z" fill="#514240"/>
+            <path d="M200 257 V268 M200 268 Q185 284 170 270 M200 268 Q215 284 230 270" fill="none" stroke="#514240" stroke-width="4.5" stroke-linecap="round"/>
+            <!-- kumis -->
+            <g fill="none" stroke="#F1ECE2" stroke-width="3" stroke-linecap="round">
+              <path d="M96 252 L34 236"/><path d="M94 266 L28 268"/><path d="M100 280 L38 302"/>
+              <path d="M304 252 L366 236"/><path d="M306 266 L372 268"/><path d="M300 280 L362 302"/>
+            </g>
+          </svg>
+        </button>
+        <p class="bubble" aria-live="polite">Meow!</p>
+
+        <svg class="spark spark--a" aria-hidden="true"><use href="#spark"/></svg>
+        <svg class="spark spark--b" aria-hidden="true"><use href="#spark"/></svg>
+
+        <div class="stamp" aria-hidden="true">
+          <span>Think</span>
+          <svg class="ico ico--lg"><use href="#paw"/></svg>
+          <span>Purr-fect</span>
+        </div>
+
+        <svg class="orbit" viewBox="0 0 120 120" aria-hidden="true">
+          <defs><path id="lingkar" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+          <g class="orbit__ring"><text><textPath href="#lingkar" textLength="270" lengthAdjust="spacing">KREATIF DENGAN TUJUAN • MIAU •</textPath></text></g>
+          <use href="#catface" x="38" y="38" width="44" height="44" style="--fur:#CFC5B4"/>
+        </svg>
+      </div>
+
+      <ul class="stats" aria-label="Angka singkat">
+        <li><b>2</b><span>Penghargaan<br>internasional</span></li>
+        <li><b>10</b><span>Penghargaan<br>nasional</span></li>
+        <li><b>15</b><span>Proyek<br>unggulan</span></li>
+      </ul>
+    </section>
+
+    <!-- Proyek -->
+    <section class="works panel panel--sand" id="karya" aria-labelledby="h-karya">
+      <div class="panel__head">
+        <svg class="ico"><use href="#paw"/></svg>
+        <h2 id="h-karya">Proyek</h2>
+        <span class="panel__rule" aria-hidden="true"></span>
+        <div class="chips" role="group" aria-label="Saring proyek">
+          <button class="chip is-on" type="button" data-filter="all" aria-pressed="true">Semua</button>
+          <button class="chip" type="button" data-filter="poster" aria-pressed="false">Poster</button>
+          <button class="chip" type="button" data-filter="uiux" aria-pressed="false">UI/UX</button>
+          <button class="chip" type="button" data-filter="atribut" aria-pressed="false">Atribut</button>
+          <button class="chip" type="button" data-filter="video" aria-pressed="false">Video</button>
+          <button class="chip" type="button" data-filter="game" aria-pressed="false">Game</button>
+        </div>
+      </div>
+
+      <!--
+        Tambah proyek baru: salin satu <li> di bawah, ganti gambar, judul, dan data-*.
+        data-tools memakai nama file di assets/logos (tanpa .png), pisahkan dengan koma.
+        data-images boleh lebih dari satu (pisahkan dengan koma).
+        data-link: isi tautan YouTube/Behance bila ada, tombolnya muncul otomatis.
+      -->
+      <ul class="cards">
+        <li data-cat="poster">
+          <button class="card" type="button"
+            data-title="Cegah Gangguan Mental" data-meta="Desain grafis poster"
+            data-desc="Poster kampanye kesehatan mental remaja untuk FLS2N 2024. Satu gambar dibelah dua: sisi gelap tentang tekanan dan perundungan, sisi terang tentang dukungan, olahraga, dan bersosialisasi."
+            data-tools="ibispaint" data-images="assets/projects/cegah.jpg" data-link="">
+            <span class="card__img"><img src="assets/projects/cegah.jpg" alt="Poster Cegah Gangguan Mental" width="690" height="964" loading="lazy"></span>
+            <span class="card__tools"><img src="assets/logos/ibispaint.png" alt="" width="26" height="26"></span>
+            <span class="card__cap"><b>01</b><span><strong>Cegah Gangguan Mental</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster">
+          <button class="card" type="button"
+            data-title="Merah Putih Berkibar Karena Kita Bersatu" data-meta="Desain grafis poster"
+            data-desc="Poster bertema persatuan dan keberagaman suku, agama, ras, dan budaya, dengan ilustrasi perjuangan kemerdekaan."
+            data-tools="ibispaint" data-images="assets/projects/merahputih.jpg" data-link="">
+            <span class="card__img"><img src="assets/projects/merahputih.jpg" alt="Poster Merah Putih Berkibar Karena Kita Bersatu" width="690" height="701" loading="lazy"></span>
+            <span class="card__tools"><img src="assets/logos/ibispaint.png" alt="" width="26" height="26"></span>
+            <span class="card__cap"><b>02</b><span><strong>Merah Putih Berkibar</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster">
+          <button class="card" type="button"
+            data-title="Biarkan Anakmu Melihat Kita Juga" data-meta="Desain grafis poster"
+            data-desc="Poster ajakan melindungi dan melestarikan keanekaragaman hayati Indonesia, dilihat dari sudut pandang seorang anak yang bertemu satwa langka."
+            data-tools="ibispaint" data-images="assets/projects/biarkan.jpg" data-link="">
+            <span class="card__img"><img src="assets/projects/biarkan.jpg" alt="Poster Biarkan Anakmu Melihat Kita Juga" width="690" height="695" loading="lazy"></span>
+            <span class="card__tools"><img src="assets/logos/ibispaint.png" alt="" width="26" height="26"></span>
+            <span class="card__cap"><b>03</b><span><strong>Biarkan Anakmu Melihat Kita Juga</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="uiux">
+          <button class="card" type="button"
+            data-title="Raflesia Jajan dan Mia" data-meta="UI/UX aplikasi mobile"
+            data-desc="Desain antarmuka dua aplikasi mobile di Figma: Raflesia Jajan, aplikasi kuliner dengan alur masuk dan daftar, serta Mia, aplikasi skrining risiko anemia dengan cek kualitas foto dan rekomendasi tindak lanjut."
+            data-tools="figma" data-images="assets/projects/raflesia-mia.jpg,assets/projects/raflesia-board.jpg" data-link="">
+            <span class="card__img"><img src="assets/projects/raflesia-thumb.jpg" alt="Layar aplikasi Raflesia Jajan dan Mia" width="720" height="900" loading="lazy"></span>
+            <span class="card__tools"><img src="assets/logos/figma.png" alt="" width="26" height="26"></span>
+            <span class="card__cap"><b>04</b><span><strong>Raflesia Jajan dan Mia</strong><small>UI/UX aplikasi mobile</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster">
+          <button class="card" type="button"
+            data-title="Amanah: Tak Sekadar Pelepas Dahaga" data-meta="Desain grafis poster iklan"
+            data-desc="Poster iklan air minum dalam kemasan Amanah ukuran 330 ml, 500 ml, dan 200 ml. Latar pegunungan, percikan air, serta infografik proses tiga teknologi dan kadar pH 8+."
+            data-tools="photoshop,illustrator" data-images="assets/projects/amanah.jpg" data-link="">
+            <span class="card__img"><img src="assets/projects/amanah.jpg" alt="Poster iklan air minum Amanah" width="567" height="701" loading="lazy"></span>
+            <span class="card__tools"><img src="assets/logos/photoshop.png" alt="" width="26" height="26"><img src="assets/logos/illustrator.png" alt="" width="26" height="26"></span>
+            <span class="card__cap"><b>05</b><span><strong>Amanah</strong><small>Desain grafis poster iklan</small></span></span>
+          </button>
+        </li>
+        <li data-cat="atribut">
+          <button class="card" type="button"
+            data-title="Almamater dan PDH SMAN 1 Kota Bengkulu" data-meta="Desain grafis atribut"
+            data-desc="Desain almamater OSIS/MPK dan PDH Pamilos 2024 untuk SMAN 1 Kota Bengkulu, lengkap tampak depan dan belakang."
+            data-tools="canva,ibispaint" data-images="assets/projects/atribut.jpg" data-link="">
+            <span class="card__img"><img src="assets/projects/atribut-thumb.jpg" alt="Desain almamater OSIS/MPK dan PDH Pamilos" width="720" height="900" loading="lazy"></span>
+            <span class="card__tools"><img src="assets/logos/canva.png" alt="" width="26" height="26"><img src="assets/logos/ibispaint.png" alt="" width="26" height="26"></span>
+            <span class="card__cap"><b>06</b><span><strong>Almamater dan PDH</strong><small>Desain grafis atribut</small></span></span>
+          </button>
+        </li>
+        <li data-cat="video" class="is-wide">
+          <button class="card" type="button"
+            data-title="Dekapan yang Terlupa" data-meta="Videografi / film pendek"
+            data-desc="Film pendek karya Tim Monochrome, dikerjakan dengan Premiere Pro dan CapCut."
+            data-tools="premiere,capcut" data-images="assets/projects/dekapan.jpg" data-link="">
+            <span class="card__img"><img src="assets/projects/dekapan.jpg" alt="Cuplikan film pendek Dekapan yang Terlupa" width="777" height="356" loading="lazy"></span>
+            <span class="card__play" aria-hidden="true"></span>
+            <span class="card__tools"><img src="assets/logos/premiere.png" alt="" width="26" height="26"><img src="assets/logos/capcut.png" alt="" width="26" height="26"></span>
+            <span class="card__cap"><b>07</b><span><strong>Dekapan yang Terlupa</strong><small>Videografi / film pendek</small></span></span>
+          </button>
+        </li>
+        <li data-cat="uiux" class="is-wide">
+          <button class="card" type="button"
+            data-title="CofferRi" data-meta="UI/UX aplikasi mobile"
+            data-desc="Desain antarmuka aplikasi kafe CofferRi: layar pembuka dengan logo kucing, halaman masuk dengan opsi Google dan Facebook serta tautan lupa kata sandi, dan halaman daftar lengkap dengan persetujuan syarat dan privasi."
+            data-tools="figma" data-images="assets/projects/cofferi.jpg" data-link="">
+            <span class="card__img"><img src="assets/projects/cofferi.jpg" alt="Tiga layar aplikasi CofferRi: pembuka, masuk, dan daftar" width="882" height="613" loading="lazy"></span>
+            <span class="card__tools"><img src="assets/logos/figma.png" alt="" width="26" height="26"></span>
+            <span class="card__cap"><b>08</b><span><strong>CofferRi</strong><small>UI/UX aplikasi mobile</small></span></span>
+          </button>
+        </li>
+        <li data-cat="uiux" class="is-wide">
+          <button class="card" type="button"
+            data-title="Mia: Aplikasi Skrining Risiko Anemia" data-meta="UI/UX aplikasi mobile"
+            data-desc="Desain antarmuka aplikasi Mia di Figma. Alurnya mencakup pemotretan mata, cek kualitas foto, hasil skrining dengan empat tingkat risiko (normal, moderate, severe, ekstrem) beserta rekomendasi tindak lanjut, riwayat skrining, chat dokter, serta alur akun dari daftar, masuk, sampai atur ulang kata sandi."
+            data-tools="figma" data-images="assets/projects/mia-board.jpg" data-link="">
+            <span class="card__img"><img src="assets/projects/mia-board.jpg" alt="Papan desain Figma aplikasi Mia berisi layar skrining, hasil risiko, dan alur akun" width="1210" height="461" loading="lazy"></span>
+            <span class="card__tools"><img src="assets/logos/figma.png" alt="" width="26" height="26"></span>
+            <span class="card__cap"><b>09</b><span><strong>Mia: Skrining Anemia</strong><small>UI/UX aplikasi mobile</small></span></span>
+          </button>
+        </li>
+        <li data-cat="video" class="is-wide">
+          <button class="card" type="button"
+            data-title="Video Presentasi ALURA, GEMASTIK XIX 2026" data-meta="Video presentasi / Smart City"
+            data-desc="Video presentasi ALURA untuk GEMASTIK XIX 2026 divisi Smart City: sistem batimetri partisipatif berbasis crowdsensing armada nelayan dan kecerdasan artifisial untuk peringatan dini pendangkalan alur pelayaran Pelabuhan Pulau Baai. Alurnya dijelaskan lewat koleksi data nelayan, penyaringan AI, prediksi sedimentasi, dan dashboard operator."
+            data-tools="" data-images="assets/projects/alura-video.jpg" data-link="https://www.youtube.com/watch?v=lX008R0E64k">
+            <span class="card__img"><img src="assets/projects/alura-video.jpg" alt="Sampul video presentasi ALURA untuk GEMASTIK XIX 2026" width="640" height="360" loading="lazy"></span>
+            <span class="card__play" aria-hidden="true"></span>
+            <span class="card__cap"><b>10</b><span><strong>Video ALURA (GEMASTIK)</strong><small>Video presentasi / Smart City</small></span></span>
+          </button>
+        </li>
+        <li data-cat="video" class="is-wide">
+          <button class="card" type="button"
+            data-title="Video Edukasi Benar atau Salah" data-meta="Videografi / video edukasi"
+            data-desc="Video edukasi dengan format tebak benar atau salah, dibawakan langsung oleh presenter di lorong gedung kampus."
+            data-tools="" data-images="assets/projects/benar-salah.jpg" data-link="https://www.youtube.com/watch?v=3Hs5A17aLO8">
+            <span class="card__img"><img src="assets/projects/benar-salah.jpg" alt="Cuplikan video edukasi dengan presenter dan pilihan benar atau salah" width="640" height="360" loading="lazy"></span>
+            <span class="card__play" aria-hidden="true"></span>
+            <span class="card__cap"><b>11</b><span><strong>Video Benar atau Salah</strong><small>Videografi / video edukasi</small></span></span>
+          </button>
+        </li>
+        <li data-cat="video" class="is-wide">
+          <button class="card" type="button"
+            data-title="Literasi, Jembatan Menuju Indonesia Emas 2045" data-meta="Videografi / film"
+            data-desc="Film bertema literasi sebagai jembatan menuju Indonesia Emas 2045, karya Mario Andiko Dwi Saputra, Kreator Provinsi Bengkulu 2025."
+            data-tools="" data-images="assets/projects/literasi.jpg" data-link="https://www.youtube.com/watch?v=f-2Cjgph5xw">
+            <span class="card__img"><img src="assets/projects/literasi.jpg" alt="Poster film Literasi, Jembatan Menuju Indonesia Emas 2045" width="640" height="360" loading="lazy"></span>
+            <span class="card__play" aria-hidden="true"></span>
+            <span class="card__cap"><b>12</b><span><strong>Film Literasi</strong><small>Videografi / film</small></span></span>
+          </button>
+        </li>
+        <li data-cat="game" class="is-wide">
+          <button class="card" type="button"
+            data-title="Harvest Run" data-meta="Game"
+            data-desc="Game bertema pertanian dengan karakter bison dan beruang. Menu utamanya berisi Play, Tutorial, dan Credits."
+            data-tools="" data-images="assets/projects/harvest-run.jpg" data-link="https://www.youtube.com/watch?v=FGU-4t6iowk">
+            <span class="card__img"><img src="assets/projects/harvest-run.jpg" alt="Layar menu game Harvest Run dengan tombol Play, Tutorial, dan Credits" width="640" height="360" loading="lazy"></span>
+            <span class="card__cap"><b>13</b><span><strong>Harvest Run</strong><small>Game</small></span></span>
+          </button>
+        </li>
+        <li data-cat="video" class="is-wide">
+          <button class="card" type="button"
+            data-title="Berawal dari Tas Impian, Berujung Menjadi Sebuah Teror" data-meta="Videografi / video pendek"
+            data-desc="Video pendek dengan judul tipografi tebal di atas cuplikan siluet seorang perempuan berhijab di dekat jendela. Dapat ditonton lewat Reel Instagram."
+            data-tools="" data-images="assets/projects/tas-impian.jpg" data-link="https://www.instagram.com/mariorioio__/reel/DZvkXCnuJhx/">
+            <span class="card__img"><img src="assets/projects/tas-impian.jpg" alt="Cuplikan video Berawal dari Tas Impian, Berujung Menjadi Sebuah Teror" width="836" height="337" loading="lazy"></span>
+            <span class="card__play" aria-hidden="true"></span>
+            <span class="card__cap"><b>14</b><span><strong>Tas Impian</strong><small>Videografi / video pendek</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster">
+          <button class="card" type="button"
+            data-title="VOCARE: Voice-Based Parkinson Care" data-meta="Desain grafis poster ilmiah"
+            data-desc="Poster ilmiah untuk 10th FAPERTA FAIR (Best Poster) tentang VOCARE, inovasi skrining mandiri penyakit Parkinson dari analisis suara. Isinya latar belakang, tujuan, alur sistem aplikasi, empat parameter suara, dampak, dan kesimpulan, dirancang di Canva."
+            data-tools="canva" data-images="assets/projects/vocare-poster.jpg" data-link="https://canva.link/6q5b5l4yoy9sea9">
+            <span class="card__img"><img src="assets/projects/vocare-poster.jpg" alt="Poster ilmiah VOCARE: Voice-Based Parkinson Care" width="418" height="582" loading="lazy"></span>
+            <span class="card__tools"><img src="assets/logos/canva.png" alt="" width="26" height="26"></span>
+            <span class="card__cap"><b>15</b><span><strong>VOCARE</strong><small>Desain grafis poster ilmiah</small></span></span>
+          </button>
+        </li>
+              <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Literasi Harapan Bangsa" data-meta="Desain grafis poster"
+            data-desc="Poster bertema literasi." data-tools="" data-images="assets/poster/poster-01.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-01.jpg" alt="Poster Literasi Harapan Bangsa" loading="lazy"></span>
+            <span class="card__cap"><b>16</b><span><strong>Literasi Harapan Bangsa</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Berliterasi Membangun Bangsa" data-meta="Desain grafis poster"
+            data-desc="Poster bertema literasi." data-tools="" data-images="assets/poster/poster-02.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-02.jpg" alt="Poster Berliterasi Membangun Bangsa" loading="lazy"></span>
+            <span class="card__cap"><b>17</b><span><strong>Berliterasi Membangun Bangsa</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Perbanyak Literasi, Cerdaskan Negeri" data-meta="Desain grafis poster"
+            data-desc="Poster bertema literasi." data-tools="" data-images="assets/poster/poster-03.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-03.jpg" alt="Poster Perbanyak Literasi, Cerdaskan Negeri" loading="lazy"></span>
+            <span class="card__cap"><b>18</b><span><strong>Perbanyak Literasi, Cerdaskan Negeri</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Stop Bullying" data-meta="Desain grafis poster"
+            data-desc="Poster bertema sosial &amp;amp; kesehatan." data-tools="" data-images="assets/poster/poster-04.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-04.jpg" alt="Poster Stop Bullying" loading="lazy"></span>
+            <span class="card__cap"><b>19</b><span><strong>Stop Bullying</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Kenali Bentuknya, Hentikan Dampaknya" data-meta="Desain grafis poster"
+            data-desc="Poster bertema sosial &amp;amp; kesehatan." data-tools="" data-images="assets/poster/poster-05.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-05.jpg" alt="Poster Kenali Bentuknya, Hentikan Dampaknya" loading="lazy"></span>
+            <span class="card__cap"><b>20</b><span><strong>Kenali Bentuknya, Hentikan Dampaknya</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Jauhi Penyakitnya, Bukan Penderitanya" data-meta="Desain grafis poster"
+            data-desc="Poster bertema sosial &amp;amp; kesehatan." data-tools="" data-images="assets/poster/poster-06.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-06.jpg" alt="Poster Jauhi Penyakitnya, Bukan Penderitanya" loading="lazy"></span>
+            <span class="card__cap"><b>21</b><span><strong>Jauhi Penyakitnya, Bukan Penderitanya</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Hidup Sehat, Cegah Diabetes pada Anak" data-meta="Desain grafis poster"
+            data-desc="Poster bertema sosial &amp;amp; kesehatan." data-tools="" data-images="assets/poster/poster-07.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-07.jpg" alt="Poster Hidup Sehat, Cegah Diabetes pada Anak" loading="lazy"></span>
+            <span class="card__cap"><b>22</b><span><strong>Hidup Sehat, Cegah Diabetes pada Anak</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Hari Kesehatan Internasional" data-meta="Desain grafis poster"
+            data-desc="Poster bertema sosial &amp;amp; kesehatan." data-tools="" data-images="assets/poster/poster-08.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-08.jpg" alt="Poster Hari Kesehatan Internasional" loading="lazy"></span>
+            <span class="card__cap"><b>23</b><span><strong>Hari Kesehatan Internasional</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Flexing di Media Sosial" data-meta="Desain grafis poster"
+            data-desc="Poster bertema sosial &amp;amp; kesehatan." data-tools="" data-images="assets/poster/poster-09.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-09.jpg" alt="Poster Flexing di Media Sosial" loading="lazy"></span>
+            <span class="card__cap"><b>24</b><span><strong>Flexing di Media Sosial</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Dirgahayu Indonesia" data-meta="Desain grafis poster"
+            data-desc="Poster bertema kebangsaan." data-tools="" data-images="assets/poster/poster-10.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-10.jpg" alt="Poster Dirgahayu Indonesia" loading="lazy"></span>
+            <span class="card__cap"><b>25</b><span><strong>Dirgahayu Indonesia</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Dirgahayu Indonesia ke-79" data-meta="Desain grafis poster"
+            data-desc="Poster bertema kebangsaan." data-tools="" data-images="assets/poster/poster-11.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-11.jpg" alt="Poster Dirgahayu Indonesia ke-79" loading="lazy"></span>
+            <span class="card__cap"><b>26</b><span><strong>Dirgahayu Indonesia ke-79</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Selamat Ulang Tahun Indonesia ke-79" data-meta="Desain grafis poster"
+            data-desc="Poster bertema kebangsaan." data-tools="" data-images="assets/poster/poster-12.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-12.jpg" alt="Poster Selamat Ulang Tahun Indonesia ke-79" loading="lazy"></span>
+            <span class="card__cap"><b>27</b><span><strong>Selamat Ulang Tahun Indonesia ke-79</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Membangkitkan Ingatan" data-meta="Desain grafis poster"
+            data-desc="Poster bertema kebangsaan." data-tools="" data-images="assets/poster/poster-13.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-13.jpg" alt="Poster Membangkitkan Ingatan" loading="lazy"></span>
+            <span class="card__cap"><b>28</b><span><strong>Membangkitkan Ingatan</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Lindungi Mereka" data-meta="Desain grafis poster"
+            data-desc="Poster bertema lingkungan." data-tools="" data-images="assets/poster/poster-14.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-14.jpg" alt="Poster Lindungi Mereka" loading="lazy"></span>
+            <span class="card__cap"><b>29</b><span><strong>Lindungi Mereka</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Prinsip Kimia Hijau" data-meta="Desain grafis poster"
+            data-desc="Poster bertema lingkungan." data-tools="" data-images="assets/poster/poster-15.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-15.jpg" alt="Poster Prinsip Kimia Hijau" loading="lazy"></span>
+            <span class="card__cap"><b>30</b><span><strong>Prinsip Kimia Hijau</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Sampah Plastik, Let&#x27;s Go Green" data-meta="Desain grafis poster"
+            data-desc="Poster bertema lingkungan." data-tools="" data-images="assets/poster/poster-16.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-16.jpg" alt="Poster Sampah Plastik, Let&#x27;s Go Green" loading="lazy"></span>
+            <span class="card__cap"><b>31</b><span><strong>Sampah Plastik, Let&#x27;s Go Green</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Hijaukan Desa dengan Menanam Pohon Jambu" data-meta="Desain grafis poster"
+            data-desc="Poster bertema lingkungan." data-tools="" data-images="assets/poster/poster-17.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-17.jpg" alt="Poster Hijaukan Desa dengan Menanam Pohon Jambu" loading="lazy"></span>
+            <span class="card__cap"><b>32</b><span><strong>Hijaukan Desa dengan Menanam Pohon Jambu</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Hukum Newton Selalu Ada di Dekat Kita" data-meta="Desain grafis poster"
+            data-desc="Poster bertema sains &amp;amp; budaya." data-tools="" data-images="assets/poster/poster-18.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-18.jpg" alt="Poster Hukum Newton Selalu Ada di Dekat Kita" loading="lazy"></span>
+            <span class="card__cap"><b>33</b><span><strong>Hukum Newton Selalu Ada di Dekat Kita</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Keindahan Pola dan Simetri" data-meta="Desain grafis poster"
+            data-desc="Poster bertema sains &amp;amp; budaya." data-tools="" data-images="assets/poster/poster-19.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-19.jpg" alt="Poster Keindahan Pola dan Simetri" loading="lazy"></span>
+            <span class="card__cap"><b>34</b><span><strong>Keindahan Pola dan Simetri</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Cerdas dan Berakhlak" data-meta="Desain grafis poster"
+            data-desc="Poster bertema sains &amp;amp; budaya." data-tools="" data-images="assets/poster/poster-20.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-20.jpg" alt="Poster Cerdas dan Berakhlak" loading="lazy"></span>
+            <span class="card__cap"><b>35</b><span><strong>Cerdas dan Berakhlak</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Yuk Mengenal 6 Rukun Haji" data-meta="Desain grafis poster"
+            data-desc="Poster bertema religi." data-tools="" data-images="assets/poster/poster-21.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-21.jpg" alt="Poster Yuk Mengenal 6 Rukun Haji" loading="lazy"></span>
+            <span class="card__cap"><b>36</b><span><strong>Yuk Mengenal 6 Rukun Haji</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Ukhuwah Islamiyah" data-meta="Desain grafis poster"
+            data-desc="Poster bertema religi." data-tools="" data-images="assets/poster/poster-22.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-22.jpg" alt="Poster Ukhuwah Islamiyah" loading="lazy"></span>
+            <span class="card__cap"><b>37</b><span><strong>Ukhuwah Islamiyah</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Menumbuhkan Rasa Empati dengan Berkurban" data-meta="Desain grafis poster"
+            data-desc="Poster bertema religi." data-tools="" data-images="assets/poster/poster-23.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-23.jpg" alt="Poster Menumbuhkan Rasa Empati dengan Berkurban" loading="lazy"></span>
+            <span class="card__cap"><b>38</b><span><strong>Menumbuhkan Rasa Empati dengan Berkurban</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Ramadhan Berkah" data-meta="Desain grafis poster"
+            data-desc="Poster bertema religi." data-tools="" data-images="assets/poster/poster-24.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-24.jpg" alt="Poster Ramadhan Berkah" loading="lazy"></span>
+            <span class="card__cap"><b>39</b><span><strong>Ramadhan Berkah</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+        <li data-cat="poster" data-extra="1" hidden>
+          <button class="card" type="button"
+            data-title="Memaksimalkan Aktivitas di Bulan Ramadhan" data-meta="Desain grafis poster"
+            data-desc="Poster bertema religi." data-tools="" data-images="assets/poster/poster-25.jpg" data-link="">
+            <span class="card__img"><img src="assets/poster/poster-25.jpg" alt="Poster Memaksimalkan Aktivitas di Bulan Ramadhan" loading="lazy"></span>
+            <span class="card__cap"><b>40</b><span><strong>Memaksimalkan Aktivitas di Bulan Ramadhan</strong><small>Desain grafis poster</small></span></span>
+          </button>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Tentang saya -->
+    <section class="about panel panel--brown" id="tentang" aria-labelledby="h-tentang">
+      <figure class="about__photo">
+        <img src="assets/foto.jpg" alt="Foto Mario Andiko Dwi Saputra" width="338" height="480" loading="lazy">
+      </figure>
+      <div class="about__text">
+        <div class="panel__head">
+          <svg class="ico"><use href="#spark"/></svg>
+          <h2 id="h-tentang">Tentang saya</h2>
+        </div>
+        <p>Saya Mario Andiko Dwi Saputra, mahasiswa Informatika Universitas Bengkulu yang berfokus pada UI/UX design, web development, dan pengembangan perangkat lunak. Saya terbiasa merancang antarmuka aplikasi mobile di Figma dan membangun produk digital yang fungsional dan nyaman digunakan.</p>
+        <p>Dasar pemrograman saya (Python, JavaScript, HTML, CSS) berpadu dengan kemampuan desain visual yang terbukti lewat lebih dari 15 penghargaan desain poster tingkat kota hingga nasional. Saya juga menyusun karya inovasi berbasis kecerdasan artifisial dan machine learning yang meraih juara tingkat nasional hingga internasional, serta mengelola publikasi dan konten digital di ERCOM dan MOSTANEER.</p>
+        <p>Saya aktif di bidang Pendidikan, Riset, Inovasi, dan Teknologi (PENRISTEK) HIMATIF, terbiasa berpikir kritis dan bekerja dalam tim, dan selalu terbuka untuk kolaborasi proyek maupun penawaran profesional. Hubungi saya lewat email di dikodikod94@gmail.com.</p>
+
+        <!-- Ikon sosial media. LinkedIn sengaja tidak mengarah ke mana-mana (data-noop); isi href-nya nanti lalu hapus data-noop. -->
+        <div class="social">
+          <span class="social__label">Sosial media</span>
+          <ul>
+            <li><a href="https://www.instagram.com/mariorioio__/" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/social/instagram.png" alt="" width="40" height="40" loading="lazy"></a></li>
+            <li><a href="https://www.facebook.com/mario.andiko.dwi.saputra?locale=id_ID" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/social/facebook.png" alt="" width="40" height="40" loading="lazy"></a></li>
+            <li><a href="https://www.youtube.com/@Kucing_Gemoy2706" target="_blank" rel="noopener" aria-label="YouTube"><img src="assets/social/youtube.png" alt="" width="40" height="40" loading="lazy"></a></li>
+            <li><a href="https://www.tiktok.com/@h_alusinasi_" target="_blank" rel="noopener" aria-label="TikTok"><img src="assets/social/tiktok.png" alt="" width="40" height="40" loading="lazy"></a></li>
+            <li><a href="#" data-noop aria-label="LinkedIn"><img src="assets/social/linkedin.png" alt="" width="40" height="40" loading="lazy"></a></li>
+            <li><a href="https://wa.me/6282178345420" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/social/whatsapp.png" alt="" width="40" height="40" loading="lazy"></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengalaman kerja -->
+    <section class="work panel panel--line" id="pengalaman" aria-labelledby="h-kerja">
+      <div class="panel__head">
+        <svg class="ico"><use href="#paw"/></svg>
+        <h2 id="h-kerja">Pengalaman kerja</h2>
+      </div>
+      <div class="work__grid">
+        <article class="job">
+          <p class="job__date">2022 sampai sekarang · Bengkulu</p>
+          <h3>Desainer Grafis (Freelance)</h3>
+          <p class="job__sub">Poster, banner, dan konten media sosial</p>
+          <ul>
+            <li>Merancang poster, banner, dan feed media sosial untuk kegiatan organisasi, kampus, dan kompetisi dengan Canva, Figma, Photoshop, dan Illustrator.</li>
+            <li>Karya poster meraih lebih dari 15 penghargaan dari tingkat kota, provinsi, hingga nasional, antara lain Juara 1 COS 2025 dan Juara 1 FLS2N Kota 2024.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <p class="job__date">2022 sampai sekarang · Bengkulu</p>
+          <h3>Konten Kreator dan Dokumentasi</h3>
+          <p class="job__sub">Publikasi, dokumentasi, dan konten digital</p>
+          <ul>
+            <li>Memimpin tim Publikasi dan Dokumentasi OSIS SMAN 1 Kota Bengkulu, lalu menjadi kreator konten visual dan dokumentasi untuk ERCOM, MOSTANEER, dan CODEWORKS Informatika di Universitas Bengkulu.</li>
+            <li>Memproduksi dan menyunting foto serta video dengan CapCut, Premiere Pro, KineMaster, dan PixelLab.</li>
+            <li>Menjalankan kampanye sosial dan literasi lewat konten kreatif bersama Duta Kreator Provinsi Bengkulu (Finalis 2025).</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Karya ilmiah dan inovasi -->
+    <section class="sci panel panel--sand" id="inovasi" aria-labelledby="h-inovasi">
+      <div class="panel__head">
+        <svg class="ico"><use href="#spark"/></svg>
+        <h2 id="h-inovasi">Karya ilmiah dan inovasi</h2>
+      </div>
+      <ul class="sci__list">
+        <li>
+          <span class="rank rank--2">Juara 2</span>
+          <div>
+            <p class="sci__event">Kompetisi Nasional Inovasi Digital Mahasiswa, Universitas Negeri Makassar · 29 Juli sampai 16 Agustus 2026</p>
+            <h3>Divisi Inovasi Teknologi Digital Pendidikan (ITDP), Dies Natalis UNM ke-65</h3>
+            <p>"Melampaui Angka, Mengungkap Potensi: Transformasi Asesmen Pendidikan Indonesia melalui Sistem Diagnostik Literasi Berbasis Artificial Intelligence"</p>
+          </div>
+        </li>
+        <li>
+          <span class="rank rank--3">Bronze Medal</span>
+          <div>
+            <p class="sci__event">10th FAPERTA FAIR, Chiang Mai University, Thailand · 8–9 Agustus 2026</p>
+            <h3>Bronze Medal dan Best Poster</h3>
+            <p>Karya esai "VOCARE: A Voice-Based Digital Twin for Screening Prodromal Parkinson's Disease"</p>
+          </div>
+        </li>
+        <li>
+          <span class="rank rank--x">Lolos seleksi</span>
+          <div>
+            <p class="sci__event">ALURA, GEMASTIK Divisi Smart City 2026 · seleksi internal</p>
+            <h3>Peringatan dini pendangkalan alur pelayaran</h3>
+            <p>Sistem Batimetri Partisipatif Berbasis Crowdsensing Armada Nelayan dan Kecerdasan Artifisial untuk Peringatan Dini Pendangkalan Alur Pelayaran Pelabuhan Pulau Baai.</p>
+          </div>
+        </li>
+        <li>
+          <span class="rank rank--x">Anggota tim</span>
+          <div>
+            <p class="sci__event">PKM-KC Internal, Universitas Bengkulu · Juli 2026</p>
+            <h3>Skrining risiko anemia kehamilan</h3>
+            <p>Sistem Skrining Risiko Anemia Kehamilan Non-Invasif melalui Palpebral Conjunctiva Berbasis Smartphone dan Machine Learning Terintegrasi Opto-Mechanic Light-Shield.</p>
+          </div>
+        </li>
+        <li>
+          <span class="rank rank--x">Anggota</span>
+          <div>
+            <p class="sci__event">Pekan Ilmiah Mahasiswa (PIM) UNIB, Universitas Bengkulu · Desember 2025</p>
+            <h3>Pekan Ilmiah Mahasiswa</h3>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Alat desain dan keahlian: logo ada di folder assets/logos -->
+    <section class="tools panel panel--olive" aria-labelledby="h-alat">
+      <div class="panel__head">
+        <svg class="ico"><use href="#spark"/></svg>
+        <h2 id="h-alat">Alat dan keahlian</h2>
+      </div>
+      <ul class="tools__list">
+        <li><img class="tool" src="assets/logos/figma.png" alt="" width="64" height="64" loading="lazy"><span>Figma</span></li>
+        <li><img class="tool" src="assets/logos/photoshop.png" alt="" width="64" height="64" loading="lazy"><span>Photoshop</span></li>
+        <li><img class="tool" src="assets/logos/illustrator.png" alt="" width="64" height="64" loading="lazy"><span>Illustrator</span></li>
+        <li><img class="tool" src="assets/logos/premiere.png" alt="" width="64" height="64" loading="lazy"><span>Premiere Pro</span></li>
+        <li><img class="tool" src="assets/logos/capcut.png" alt="" width="64" height="64" loading="lazy"><span>CapCut</span></li>
+        <li><img class="tool" src="assets/logos/canva.png" alt="" width="64" height="64" loading="lazy"><span>Canva</span></li>
+        <li><img class="tool" src="assets/logos/ibispaint.png" alt="" width="64" height="64" loading="lazy"><span>ibisPaint X</span></li>
+        <li><img class="tool" src="assets/logos/pixellab.png" alt="" width="64" height="64" loading="lazy"><span>PixelLab</span></li>
+      </ul>
+      <dl class="skills">
+        <div><dt>Pemrograman</dt><dd><span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span></dd></div>
+        <div><dt>Perangkat lain</dt><dd><span>Microsoft Word</span><span>Microsoft Excel</span><span>KineMaster</span></dd></div>
+        <div><dt>Soft skills</dt><dd><span>Pemecahan masalah</span><span>Adaptif</span><span>Manajemen waktu</span><span>Komunikasi efektif</span><span>Berbicara di depan umum</span></dd></div>
+        <div><dt>Bahasa</dt><dd><span>Indonesia (native)</span><span>English (intermediate)</span></dd></div>
+      </dl>
+      <svg class="peek" viewBox="0 0 140 72" aria-hidden="true">
+        <path d="M8 72 C8 32 38 14 70 14 C102 14 132 32 132 72Z" fill="#CFC5B4"/>
+        <path d="M20 36 L25 4 L50 21Z M120 36 L115 4 L90 21Z" fill="#CFC5B4"/>
+        <g class="eye"><ellipse cx="50" cy="46" rx="9" ry="11" fill="#F1ECE2"/><g class="pupil" data-range="3"><ellipse cx="50" cy="47" rx="4.5" ry="8" fill="#514240"/></g></g>
+        <g class="eye"><ellipse cx="90" cy="46" rx="9" ry="11" fill="#F1ECE2"/><g class="pupil" data-range="3"><ellipse cx="90" cy="47" rx="4.5" ry="8" fill="#514240"/></g></g>
+        <path d="M66 58 Q70 55 74 58 Q72 63 70 64 Q68 63 66 58Z" fill="#514240"/>
+      </svg>
+    </section>
+
+    <!--
+      Pendidikan dan organisasi.
+      Logo yang belum ada memakai lingkaran putus-putus. Untuk menggantinya, simpan logo di
+      assets/organisasi/ lalu ganti <span class="path__logo path__logo--empty">...</span> dengan
+      <img class="path__logo" src="assets/organisasi/nama-file.png" alt="" width="56" height="56">
+    -->
+    <div class="duo duo--org">
+      <section class="edu panel panel--sand" aria-labelledby="h-edu">
+        <div class="panel__head">
+          <svg class="ico"><use href="#paw"/></svg>
+          <h2 id="h-edu">Pendidikan</h2>
+        </div>
+        <ul class="path">
+          <li>
+            <img class="path__logo" src="assets/organisasi/unib.png" alt="" width="56" height="56" loading="lazy">
+            <div><strong>Informatika</strong><small>Universitas Bengkulu</small><em>Agustus 2025 sampai sekarang</em></div>
+          </li>
+          <li>
+            <img class="path__logo" src="assets/organisasi/sman1.png" alt="" width="56" height="56" loading="lazy">
+            <div><strong>Matematika dan Ilmu Pengetahuan Alam</strong><small>SMAN 1 Kota Bengkulu</small><em>Juli 2022 sampai April 2025 · nilai 88,15 dari 100</em></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="orgs panel panel--olive" aria-labelledby="h-org">
+        <div class="panel__head">
+          <svg class="ico"><use href="#paw"/></svg>
+          <h2 id="h-org">Organisasi</h2>
+        </div>
+        <h3 class="path__group">Kampus dan komunitas</h3>
+        <ul class="path path--two">
+            <li><img class="path__logo path__logo--tile" src="assets/organisasi/himatif.png" alt="" width="56" height="56" loading="lazy"><div><strong>Staff PENRISTEK</strong><small>HIMATIF, Universitas Bengkulu</small><em>2026</em></div></li>
+            <li><img class="path__logo" src="assets/organisasi/ercom.png" alt="" width="56" height="56" loading="lazy"><div><strong>Anggota KOMINFO</strong><small>ERCOM, Universitas Bengkulu</small><em>Agustus 2025 sampai sekarang</em></div></li>
+            <li><img class="path__logo" src="assets/organisasi/mostaneer.png" alt="" width="56" height="56" loading="lazy"><div><strong>Anggota Divisi Kaderisasi</strong><small>MOSTANEER, Universitas Bengkulu</small><em>Agustus 2025 sampai sekarang</em></div></li>
+            <li><img class="path__logo path__logo--tile" src="assets/organisasi/duta-kreator.png" alt="" width="56" height="56" loading="lazy"><div><strong>Anggota Divisi Sosial</strong><small>Duta Kreator Provinsi Bengkulu</small><em>Februari 2025 sampai sekarang</em></div></li>
+            <li><img class="path__logo" src="assets/organisasi/salemba.png" alt="" width="56" height="56" loading="lazy"><div><strong>Sekretaris</strong><small>Sanggar Seni Lemang Batu (SALEMBA), Kota Bengkulu</small></div></li>
+        </ul>
+        <h3 class="path__group">Sekolah</h3>
+        <ul class="path path--two">
+            <li><img class="path__logo" src="assets/organisasi/osis-mpk.png" alt="" width="56" height="56" loading="lazy"><div><strong>Ketua Divisi PUBDOK</strong><small>OSIS SMAN 1 Kota Bengkulu</small><em>Oktober 2022 sampai Oktober 2024</em></div></li>
+            <li><img class="path__logo path__logo--tile" src="assets/organisasi/rohis.png" alt="" width="56" height="56" loading="lazy"><div><strong>Anggota PSDM</strong><small>Rohani Islam (Rohis) SMAN 1 Kota Bengkulu</small><em>September 2022 sampai September 2024</em></div></li>
+            <li><img class="path__logo path__logo--tile" src="assets/organisasi/crs.png" alt="" width="56" height="56" loading="lazy"><div><strong>Anggota Robotik</strong><small>ROBOTICAL, ekstrakurikuler Fisika SMAN 1 Kota Bengkulu</small><em>September 2022 sampai September 2024</em></div></li>
+            <li><span class="path__logo path__logo--empty" aria-hidden="true"><svg class="ico"><use href="#paw"/></svg></span><div><strong>Anggota Media</strong><small>ALAP (Aktif Literasi Alam dan Penghijauan) SMAN 1 Kota Bengkulu</small><em>September 2023 sampai September 2024</em></div></li>
+        </ul>
+        <details class="more">
+          <summary>Kepanitiaan dan kegiatan, 2025 sampai 2026</summary>
+          <ul>
+            <li><strong>HIMATIF:</strong> Anggota PERKAP pada CHROME dan Gathering 2026; Anggota DANUS pada IT RUSH 2026.</li>
+            <li><strong>MOSTANEER:</strong> Ketua Pelaksana IGNITE 2026; Koordinator Media MOSTANEER FAIR 16 (Milad ke-22, 2026); Publikasi dan Dokumentasi MUKER (Desember 2025) dan PMB (2026).</li>
+            <li><strong>ERCOM:</strong> Anggota PDD NEON National ERCOM Competition 2026; Staff KOMINFO pada ERCOM Academy (April 2026) dan ERCOM Go To School di SMK 3 Kota Bengkulu (2026).</li>
+            <li><strong>Lainnya:</strong> Divisi Acara Summer Bootcamp (Mei 2026); Publikasi dan Dokumentasi CODEWORKS Informatika (2026).</li>
+          </ul>
+        </details>
+      </section>
+    </div>
+
+    <!-- Prestasi per tingkat. Tambah prestasi: salin satu <li> di grup yang sesuai dan ubah angka di tombol penyaring. -->
+    <section class="awards panel panel--line" id="prestasi" aria-labelledby="h-prestasi">
+      <div class="panel__head">
+        <svg class="ico"><use href="#paw"/></svg>
+        <h2 id="h-prestasi">Prestasi per tingkat</h2>
+      </div>
+      <div class="levels" role="group" aria-label="Pilih tingkat lomba">
+          <button class="level is-on" type="button" data-level="all" aria-pressed="true"><b>33</b><span>Semua</span></button>
+          <button class="level" type="button" data-level="internasional" aria-pressed="false"><b>2</b><span>Internasional</span></button>
+          <button class="level" type="button" data-level="nasional" aria-pressed="false"><b>10</b><span>Nasional</span></button>
+          <button class="level" type="button" data-level="provinsi" aria-pressed="false"><b>7</b><span>Provinsi</span></button>
+          <button class="level" type="button" data-level="kota" aria-pressed="false"><b>10</b><span>Kota/Kabupaten</span></button>
+          <button class="level" type="button" data-level="sekolah" aria-pressed="false"><b>1</b><span>Sekolah</span></button>
+          <button class="level" type="button" data-level="kampus" aria-pressed="false"><b>2</b><span>Kampus</span></button>
+          <button class="level" type="button" data-level="lainnya" aria-pressed="false"><b>1</b><span>Lainnya</span></button>
+      </div>
+      <div class="awards__grid">
+        <div class="awards__scroll" id="awards-scroll" tabindex="0" aria-label="Daftar prestasi">
+          <section class="award-group" data-level="internasional">
+            <h3>Internasional <span>2</span></h3>
+            <ol class="awards__list">
+              <li><span class="rank rank--1">Best Poster</span><div><strong>10th FAPERTA FAIR</strong><small>Chiang Mai University, Thailand · Agustus 2026</small></div></li>
+              <li><span class="rank rank--3">Bronze Medal</span><div><strong>10th FAPERTA FAIR, karya esai VOCARE</strong><small>Chiang Mai University, Thailand · 8–9 Agustus 2026</small></div></li>
+            </ol>
+          </section>
+          <section class="award-group" data-level="nasional">
+            <h3>Nasional <span>10</span></h3>
+            <ol class="awards__list">
+              <li><span class="rank rank--2">Juara 2</span><div><strong>Divisi Inovasi Teknologi Digital Pendidikan (ITDP)</strong><small>Kompetisi Nasional Inovasi Digital Mahasiswa, Universitas Negeri Makassar · 2026</small></div></li>
+              <li><span class="rank rank--3">Terfavorit</span><div><strong>Lomba Video Edukasi Ekonomi</strong><small>HIMEP FEB UNIB · 2026</small></div></li>
+              <li><span class="rank rank--1">Juara 1</span><div><strong>Lomba Poster COS</strong><small>2025</small></div></li>
+              <li><span class="rank rank--2">Juara 2</span><div><strong>Lomba Poster AGATIS</strong><small>2025</small></div></li>
+              <li><span class="rank rank--3">Juara 3</span><div><strong>Lomba Poster MOSTANEER FAIR</strong><small>2025</small></div></li>
+              <li><span class="rank rank--3">Juara 3</span><div><strong>Lomba Poster IPA FAIR</strong><small>2025</small></div></li>
+              <li><span class="rank rank--2">Juara 2</span><div><strong>Lomba Poster BIOEXPO</strong><small>Himpunan Mahasiswa Biologi ABAKA, Universitas Bengkulu · 12 Oktober 2024</small></div></li>
+              <li><span class="rank rank--2">Juara 2</span><div><strong>Lomba Poster Nasional Geophysics</strong><small>Universitas Bengkulu · 26 Oktober 2024</small></div></li>
+              <li><span class="rank rank--3">Juara 3</span><div><strong>Lomba Poster GEMA IMC</strong><small>Intellectual Moslem Community, Universitas Bengkulu · 2023</small></div></li>
+              <li><span class="rank rank--3">Terbaik</span><div><strong>Peserta Terbaik Lomba Menulis Jawara Sastra</strong><small>2023</small></div></li>
+            </ol>
+          </section>
+          <section class="award-group" data-level="provinsi">
+            <h3>Provinsi <span>7</span></h3>
+            <ol class="awards__list">
+              <li><span class="rank rank--2">Juara 2</span><div><strong>Desain Poster HIV AIDS</strong><small>2025</small></div></li>
+              <li><span class="rank rank--x">Finalis</span><div><strong>Duta Kreator Provinsi Bengkulu</strong><small>2025</small></div></li>
+              <li><span class="rank rank--x">Peserta</span><div><strong>Cipta Buku Cerita Pendek Daerah Bengkulu</strong><small>2025</small></div></li>
+              <li><span class="rank rank--2">Juara 2</span><div><strong>FLS2N Cabang Poster Tingkat Provinsi</strong><small>Dinas Pendidikan dan Kebudayaan Provinsi Bengkulu · 2024</small></div></li>
+              <li><span class="rank rank--1">Juara 1</span><div><strong>Lomba Poster Digital MICA Fiesta Part 2</strong><small>2024</small></div></li>
+              <li><span class="rank rank--2">Juara 2</span><div><strong>Lomba Pembuatan Konten Digital Berbahasa Daerah</strong><small>Kantor Bahasa Provinsi Bengkulu · 2024</small></div></li>
+              <li><span class="rank rank--3">Juara 3</span><div><strong>Desain Poster HIV AIDS</strong><small>2023</small></div></li>
+            </ol>
+          </section>
+          <section class="award-group" data-level="kota">
+            <h3>Kota/Kabupaten <span>10</span></h3>
+            <ol class="awards__list">
+              <li><span class="rank rank--1">Juara 1</span><div><strong>Desain Poster Iktirof</strong><small>2025</small></div></li>
+              <li><span class="rank rank--1">Juara 1</span><div><strong>Lomba Poster Digital &quot;Colorfull Ramadhan&quot;</strong><small>Masjid Nurul Ilmi, MAN 1 Kota Bengkulu · 15 Maret 2025</small></div></li>
+              <li><span class="rank rank--1">Juara 1</span><div><strong>FLS2N Cabang Poster Tingkat Kota</strong><small>2024</small></div></li>
+              <li><span class="rank rank--1">Juara 1</span><div><strong>Lomba Poster HUT SMAN 11 Kota Bengkulu</strong><small>Antar siswa SMA, diselenggarakan SMAN 11 Kota Bengkulu · 2024</small></div></li>
+              <li><span class="rank rank--3">Harapan 2</span><div><strong>Seni Daur Ulang (Pemanfaatan Limbah Plastik)</strong><small>2024</small></div></li>
+              <li><span class="rank rank--3">Harapan 2</span><div><strong>Presentasi Cinta, Bangga, Paham Rupiah (CBPR)</strong><small>Bank Indonesia · 2024</small></div></li>
+              <li><span class="rank rank--3">Juara 3</span><div><strong>FLS2N Cabang Poster Tingkat Kota</strong><small>2023</small></div></li>
+              <li><span class="rank rank--2">Juara 2</span><div><strong>Lomba Poster HUT SMAN 11 Kota Bengkulu</strong><small>Antar siswa SMA, diselenggarakan SMAN 11 Kota Bengkulu · 14 Desember 2023</small></div></li>
+              <li><span class="rank rank--3">Juara 3</span><div><strong>Futsal Iktirof</strong><small>2023</small></div></li>
+              <li><span class="rank rank--3">Juara 3</span><div><strong>Miniatur Tabot</strong><small>Taman Budaya, tingkat kota · 2023</small></div></li>
+            </ol>
+          </section>
+          <section class="award-group" data-level="sekolah">
+            <h3>Sekolah <span>1</span></h3>
+            <ol class="awards__list">
+              <li><span class="rank rank--x">Hafalan</span><div><strong>Tahfidz Juz 30</strong><small>2022</small></div></li>
+            </ol>
+          </section>
+          <section class="award-group" data-level="kampus">
+            <h3>Kampus <span>2</span></h3>
+            <ol class="awards__list">
+              <li><span class="rank rank--2">Juara 2</span><div><strong>Lomba Esai ERCOM Academy</strong><small>Lingkup Fakultas Teknik, Universitas Bengkulu · 2026</small></div></li>
+              <li><span class="rank rank--3">Juara 3</span><div><strong>MAPRES Tingkat Fakultas Teknik</strong><small>Universitas Bengkulu · 2025</small></div></li>
+            </ol>
+          </section>
+          <section class="award-group" data-level="lainnya">
+            <h3>Lainnya <span>1</span></h3>
+            <ol class="awards__list">
+              <li><span class="rank rank--1">Juara 1</span><div><strong>Lomba Poster MOSTANEER FAIR</strong><small>2022</small></div></li>
+            </ol>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeri sertifikat. Tambah sertifikat: taruh gambar di assets/sertifikat/, salin satu <li> di bawah, lalu ubah angka pada tombol penyaring. -->
+    <section class="certs panel panel--sand" id="sertifikat" aria-labelledby="h-sertifikat">
+      <div class="panel__head">
+        <svg class="ico"><use href="#spark"/></svg>
+        <h2 id="h-sertifikat">Galeri sertifikat</h2>
+      </div>
+      <div class="levels" role="group" aria-label="Pilih kategori sertifikat">
+          <button class="clevel is-on" type="button" data-clevel="all" aria-pressed="true"><b>19</b><span>Semua</span></button>
+          <button class="clevel" type="button" data-clevel="internasional" aria-pressed="false"><b>2</b><span>Internasional</span></button>
+          <button class="clevel" type="button" data-clevel="nasional" aria-pressed="false"><b>7</b><span>Nasional</span></button>
+          <button class="clevel" type="button" data-clevel="provinsi" aria-pressed="false"><b>3</b><span>Provinsi</span></button>
+          <button class="clevel" type="button" data-clevel="kota" aria-pressed="false"><b>2</b><span>Kota/Kabupaten</span></button>
+          <button class="clevel" type="button" data-clevel="kampus" aria-pressed="false"><b>2</b><span>Kampus</span></button>
+          <button class="clevel" type="button" data-clevel="lainnya" aria-pressed="false"><b>3</b><span>Lainnya</span></button>
+      </div>
+      <ul class="certs__grid" id="certs-grid">
+          <li data-clevel="internasional">
+            <button class="cert" type="button" data-title="10th FAPERTA FAIR" data-meta="Best Poster · Chiang Mai University, Thailand · 8–9 Agustus 2026" data-desc="" data-tools="" data-images="assets/sertifikat/faperta-best-poster.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat 10th FAPERTA FAIR">
+              <span class="cert__img"><img src="assets/sertifikat/faperta-best-poster-t.jpg" alt="Sertifikat Best Poster 10th FAPERTA FAIR" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--1">Best Poster</span><span><strong>10th FAPERTA FAIR</strong><small>Chiang Mai University, Thailand · 8–9 Agustus 2026</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="internasional">
+            <button class="cert" type="button" data-title="10th FAPERTA FAIR" data-meta="Bronze Medal · Chiang Mai University, Thailand · 8–9 Agustus 2026" data-desc="" data-tools="" data-images="assets/sertifikat/faperta-bronze-medal.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat 10th FAPERTA FAIR">
+              <span class="cert__img"><img src="assets/sertifikat/faperta-bronze-medal-t.jpg" alt="Sertifikat Bronze Medal 10th FAPERTA FAIR" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--3">Bronze Medal</span><span><strong>10th FAPERTA FAIR</strong><small>Chiang Mai University, Thailand · 8–9 Agustus 2026</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="nasional">
+            <button class="cert" type="button" data-title="Inovasi Teknologi Digital Pendidikan (ITDP)" data-meta="Juara 2 · Dies Natalis UNM ke-65, Universitas Negeri Makassar · 29 Juli–16 Agustus 2026" data-desc="" data-tools="" data-images="assets/sertifikat/itdp-unm-2026.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Inovasi Teknologi Digital Pendidikan (ITDP)">
+              <span class="cert__img"><img src="assets/sertifikat/itdp-unm-2026-t.jpg" alt="Sertifikat Juara 2 Inovasi Teknologi Digital Pendidikan (ITDP)" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--2">Juara 2</span><span><strong>Inovasi Teknologi Digital Pendidikan (ITDP)</strong><small>Dies Natalis UNM ke-65, Universitas Negeri Makassar · 29 Juli–16 Agustus 2026</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="nasional">
+            <button class="cert" type="button" data-title="Lomba Video Edukasi Ekonomi Nasional" data-meta="Juara Favorit · HIMEP FEB Universitas Bengkulu · 4–30 Juni 2026" data-desc="" data-tools="" data-images="assets/sertifikat/himep-video-2026.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Lomba Video Edukasi Ekonomi Nasional">
+              <span class="cert__img"><img src="assets/sertifikat/himep-video-2026-t.jpg" alt="Sertifikat Juara Favorit Lomba Video Edukasi Ekonomi Nasional" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--3">Juara Favorit</span><span><strong>Lomba Video Edukasi Ekonomi Nasional</strong><small>HIMEP FEB Universitas Bengkulu · 4–30 Juni 2026</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="nasional">
+            <button class="cert" type="button" data-title="Lomba Poster COS" data-meta="Juara 1 · HIMAFI FMIPA Universitas Bengkulu · 23 September 2025" data-desc="" data-tools="" data-images="assets/sertifikat/cos-2025.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Lomba Poster COS">
+              <span class="cert__img"><img src="assets/sertifikat/cos-2025-t.jpg" alt="Sertifikat Juara 1 Lomba Poster COS" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--1">Juara 1</span><span><strong>Lomba Poster COS</strong><small>HIMAFI FMIPA Universitas Bengkulu · 23 September 2025</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="nasional">
+            <button class="cert" type="button" data-title="Lomba Poster AGATIS 2025" data-meta="Juara 2 · HIMASIF Universitas Bengkulu · 2025" data-desc="" data-tools="" data-images="assets/sertifikat/agatis-2025.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Lomba Poster AGATIS 2025">
+              <span class="cert__img"><img src="assets/sertifikat/agatis-2025-t.jpg" alt="Sertifikat Juara 2 Lomba Poster AGATIS 2025" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--2">Juara 2</span><span><strong>Lomba Poster AGATIS 2025</strong><small>HIMASIF Universitas Bengkulu · 2025</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="nasional">
+            <button class="cert" type="button" data-title="Lomba Desain Poster IPA FAIR" data-meta="Juara 3 · HIMAIPA FKIP Universitas Bengkulu · 25–27 April 2025" data-desc="" data-tools="" data-images="assets/sertifikat/ipa-fair-2025.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Lomba Desain Poster IPA FAIR">
+              <span class="cert__img"><img src="assets/sertifikat/ipa-fair-2025-t.jpg" alt="Sertifikat Juara 3 Lomba Desain Poster IPA FAIR" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--3">Juara 3</span><span><strong>Lomba Desain Poster IPA FAIR</strong><small>HIMAIPA FKIP Universitas Bengkulu · 25–27 April 2025</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="nasional">
+            <button class="cert" type="button" data-title="Lomba Poster Nasional Geophysics" data-meta="Juara 2 · HMGF Universitas Bengkulu · 26 Oktober 2024" data-desc="" data-tools="" data-images="assets/sertifikat/geophysics-2024.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Lomba Poster Nasional Geophysics">
+              <span class="cert__img"><img src="assets/sertifikat/geophysics-2024-t.jpg" alt="Sertifikat Juara 2 Lomba Poster Nasional Geophysics" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--2">Juara 2</span><span><strong>Lomba Poster Nasional Geophysics</strong><small>HMGF Universitas Bengkulu · 26 Oktober 2024</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="nasional">
+            <button class="cert" type="button" data-title="Lomba Desain Poster BIOEXPO" data-meta="Juara 2 · HIMABIO ABAKA Universitas Bengkulu · 12 Oktober 2024" data-desc="" data-tools="" data-images="assets/sertifikat/bioexpo-2024.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Lomba Desain Poster BIOEXPO">
+              <span class="cert__img"><img src="assets/sertifikat/bioexpo-2024-t.jpg" alt="Sertifikat Juara 2 Lomba Desain Poster BIOEXPO" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--2">Juara 2</span><span><strong>Lomba Desain Poster BIOEXPO</strong><small>HIMABIO ABAKA Universitas Bengkulu · 12 Oktober 2024</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="provinsi">
+            <button class="cert" type="button" data-title="Duta Kreator 2025" data-meta="Finalis · Bengkulu · 9–12 Juli 2025" data-desc="" data-tools="" data-images="assets/sertifikat/duta-kreator-2025.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Duta Kreator 2025">
+              <span class="cert__img"><img src="assets/sertifikat/duta-kreator-2025-t.jpg" alt="Sertifikat Finalis Duta Kreator 2025" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--x">Finalis</span><span><strong>Duta Kreator 2025</strong><small>Bengkulu · 9–12 Juli 2025</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="provinsi">
+            <button class="cert" type="button" data-title="Lomba Konten Digital Berbahasa Daerah" data-meta="Juara 2 · Kantor Bahasa Provinsi Bengkulu · 31 Oktober 2024" data-desc="" data-tools="" data-images="assets/sertifikat/kantor-bahasa-2024.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Lomba Konten Digital Berbahasa Daerah">
+              <span class="cert__img"><img src="assets/sertifikat/kantor-bahasa-2024-t.jpg" alt="Sertifikat Juara 2 Lomba Konten Digital Berbahasa Daerah" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--2">Juara 2</span><span><strong>Lomba Konten Digital Berbahasa Daerah</strong><small>Kantor Bahasa Provinsi Bengkulu · 31 Oktober 2024</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="provinsi">
+            <button class="cert" type="button" data-title="FLS2N Desain Poster Tingkat Provinsi" data-meta="Juara 2 · Dinas Pendidikan dan Kebudayaan Provinsi Bengkulu · 12–14 Juli 2024" data-desc="" data-tools="" data-images="assets/sertifikat/fls2n-provinsi-2024.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat FLS2N Desain Poster Tingkat Provinsi">
+              <span class="cert__img"><img src="assets/sertifikat/fls2n-provinsi-2024-t.jpg" alt="Sertifikat Juara 2 FLS2N Desain Poster Tingkat Provinsi" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--2">Juara 2</span><span><strong>FLS2N Desain Poster Tingkat Provinsi</strong><small>Dinas Pendidikan dan Kebudayaan Provinsi Bengkulu · 12–14 Juli 2024</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="kota">
+            <button class="cert" type="button" data-title="Presentasi Cinta, Bangga, Paham Rupiah" data-meta="Harapan 2 · Bank Indonesia Provinsi Bengkulu · 2024" data-desc="" data-tools="" data-images="assets/sertifikat/cbpr-2024.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Presentasi Cinta, Bangga, Paham Rupiah">
+              <span class="cert__img"><img src="assets/sertifikat/cbpr-2024-t.jpg" alt="Sertifikat Harapan 2 Presentasi Cinta, Bangga, Paham Rupiah" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--3">Harapan 2</span><span><strong>Presentasi Cinta, Bangga, Paham Rupiah</strong><small>Bank Indonesia Provinsi Bengkulu · 2024</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="kota">
+            <button class="cert" type="button" data-title="FLS2N Desain Poster Tingkat Kota" data-meta="Juara 3 · SMA se-Kota Bengkulu · 27 Mei 2023" data-desc="" data-tools="" data-images="assets/sertifikat/fls2n-kota-2023.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat FLS2N Desain Poster Tingkat Kota">
+              <span class="cert__img"><img src="assets/sertifikat/fls2n-kota-2023-t.jpg" alt="Sertifikat Juara 3 FLS2N Desain Poster Tingkat Kota" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--3">Juara 3</span><span><strong>FLS2N Desain Poster Tingkat Kota</strong><small>SMA se-Kota Bengkulu · 27 Mei 2023</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="kampus">
+            <button class="cert" type="button" data-title="Lomba Esai ERCOM Academy" data-meta="Esai Terbaik 2 · UKM ERCOM Fakultas Teknik UNIB · 18–26 April 2026" data-desc="" data-tools="" data-images="assets/sertifikat/ercom-esai-2026.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Lomba Esai ERCOM Academy">
+              <span class="cert__img"><img src="assets/sertifikat/ercom-esai-2026-t.jpg" alt="Sertifikat Esai Terbaik 2 Lomba Esai ERCOM Academy" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--2">Esai Terbaik 2</span><span><strong>Lomba Esai ERCOM Academy</strong><small>UKM ERCOM Fakultas Teknik UNIB · 18–26 April 2026</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="kampus">
+            <button class="cert" type="button" data-title="Seleksi Mahasiswa Berprestasi" data-meta="Juara 3 · Fakultas Teknik Universitas Bengkulu · 2025" data-desc="" data-tools="" data-images="assets/sertifikat/mapres-ft-2025.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Seleksi Mahasiswa Berprestasi">
+              <span class="cert__img"><img src="assets/sertifikat/mapres-ft-2025-t.jpg" alt="Sertifikat Juara 3 Seleksi Mahasiswa Berprestasi" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--3">Juara 3</span><span><strong>Seleksi Mahasiswa Berprestasi</strong><small>Fakultas Teknik Universitas Bengkulu · 2025</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="lainnya">
+            <button class="cert" type="button" data-title="International Seminar NEON 2026" data-meta="Peserta · UKM ERCOM FT Universitas Bengkulu · 12 Oktober 2026" data-desc="" data-tools="" data-images="assets/sertifikat/neon-2026.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat International Seminar NEON 2026">
+              <span class="cert__img"><img src="assets/sertifikat/neon-2026-t.jpg" alt="Sertifikat Peserta International Seminar NEON 2026" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--x">Peserta</span><span><strong>International Seminar NEON 2026</strong><small>UKM ERCOM FT Universitas Bengkulu · 12 Oktober 2026</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="lainnya">
+            <button class="cert" type="button" data-title="Hour of Code Training" data-meta="Pelatihan · Ruangguru × AI Ready ASEAN · September 2025" data-desc="" data-tools="" data-images="assets/sertifikat/hour-of-code.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Hour of Code Training">
+              <span class="cert__img"><img src="assets/sertifikat/hour-of-code-t.jpg" alt="Sertifikat Pelatihan Hour of Code Training" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--x">Pelatihan</span><span><strong>Hour of Code Training</strong><small>Ruangguru × AI Ready ASEAN · September 2025</small></span></span>
+            </button>
+          </li>
+          <li data-clevel="lainnya">
+            <button class="cert" type="button" data-title="Deputi Pubdok OSIS SMAN 1 Kota Bengkulu" data-meta="Apresiasi · Periode 2023/2024 · predikat Sangat Baik" data-desc="" data-tools="" data-images="assets/sertifikat/osis-deputi-pubdok.jpg" data-link="" data-solo="1" aria-label="Perbesar sertifikat Deputi Pubdok OSIS SMAN 1 Kota Bengkulu">
+              <span class="cert__img"><img src="assets/sertifikat/osis-deputi-pubdok-t.jpg" alt="Sertifikat Apresiasi Deputi Pubdok OSIS SMAN 1 Kota Bengkulu" loading="lazy"></span>
+              <span class="cert__cap"><span class="rank rank--x">Apresiasi</span><span><strong>Deputi Pubdok OSIS SMAN 1 Kota Bengkulu</strong><small>Periode 2023/2024 · predikat Sangat Baik</small></span></span>
+            </button>
+          </li>
+      </ul>
+    </section>
+
+    <!-- Pelatihan -->
+    <section class="train panel panel--brown" id="pelatihan" aria-labelledby="h-latih">
+      <div class="panel__head">
+        <svg class="ico"><use href="#spark"/></svg>
+        <h2 id="h-latih">Pelatihan dan seminar</h2>
+      </div>
+      <ul class="train__list">
+        <li><time>12 Okt 2026</time><div><strong>International Seminar of the National ERCOM Competition (NEON) 2026</strong><small>Tema "Green Technology Innovation: Transforming Green Infrastructure Towards a Smart and Sustainable City", UKM ERCOM FT Universitas Bengkulu</small></div></li>
+        <li><time>Apr 2026</time><div><strong>Pelatihan Kesekretariatan dan Kebendaharaan ERCOM</strong><small>Staff KOMINFO dan peserta, UKM ERCOM Universitas Bengkulu</small></div></li>
+        <li><time>1 Des 2025</time><div><strong>Webinar dan Bedah Buku</strong><small>Universitas Bengkulu</small></div></li>
+        <li><time>27 Sep 2025</time><div><strong>IT Mastery: Shift Left Security</strong><small>Integrasi cyber security dalam siklus pengembangan perangkat lunak (SDLC), Universitas Bengkulu</small></div></li>
+        <li><time>Sep 2025</time><div><strong>Hour of Coding Training</strong><small>Dasar pemrograman dan logika komputasi, Universitas Bengkulu</small></div></li>
+        <li><time>15 Des 2024</time><div><strong>Seminar Nasional WIMNUS</strong><small>Wirausaha Muda Nusantara, tema "Youth Today Leader Tomorrow"</small></div></li>
+        <li><time>18 Okt 2024</time><div><strong>Pelatihan Sejarah Lokal dan Pelestarian Cagar Budaya</strong><small>Museum Bengkulu</small></div></li>
+        <li><time>26–27 Jul 2024</time><div><strong>Pembekalan Krida Duta Bahasa, Aktivis Penggerak Literasi</strong><small>Kantor Bahasa Provinsi Bengkulu, di SMAN 1 Kota Bengkulu</small></div></li>
+      </ul>
+    </section>
+
+    <!-- Ajakan dan kontak -->
+    <div class="duo duo--contact" id="kontak">
+      <section class="cta panel panel--sand" aria-labelledby="h-cta">
+        <span class="cta__rays" aria-hidden="true"></span>
+        <p class="eyebrow">Punya proyek?</p>
+        <h2 id="h-cta">Ayo bangun<br>sesuatu yang<br>luar biasa</h2>
+        <a class="btn" href="https://wa.me/6282178345420" target="_blank" rel="noopener">Chat lewat WhatsApp <span class="round"><svg class="ico"><use href="#arrow"/></svg></span></a>
+      </section>
+
+      <section class="contact panel panel--olive" aria-labelledby="h-kontak">
+        <div class="panel__head">
+          <svg class="ico"><use href="#spark"/></svg>
+          <h2 id="h-kontak">Hubungi saya</h2>
+        </div>
+        <ul class="contact__list">
+          <li><span class="round"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg></span><a href="mailto:dikodikod94@gmail.com">dikodikod94@gmail.com</a></li>
+          <li><span class="round"><svg class="ico" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><a href="https://wa.me/6282178345420" target="_blank" rel="noopener">+62 821-7834-5420</a></li>
+          <li><span class="round"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></span><a href="https://www.instagram.com/mariorioio__/" target="_blank" rel="noopener">@mariorioio__</a></li>
+          <li><span class="round"><svg class="ico" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><a href="https://github.com/marioandiko" target="_blank" rel="noopener">github.com/marioandiko</a></li>
+          <li><span class="round"><svg class="ico" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></svg></span><span>Kota Bengkulu, Bengkulu, Indonesia</span></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Jendela perbesar proyek -->
+    <dialog class="lb" id="lb" aria-labelledby="lb-title">
+      <div class="lb__box">
+        <button class="lb__close" type="button" aria-label="Tutup">
+          <svg class="ico" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        </button>
+        <div class="lb__media" id="lb-media"></div>
+        <div class="lb__info">
+          <p class="lb__meta" id="lb-meta"></p>
+          <h3 id="lb-title"></h3>
+          <p class="lb__desc" id="lb-desc"></p>
+          <ul class="lb__tools" id="lb-tools" aria-label="Alat yang dipakai"></ul>
+          <a class="btn btn--light" id="lb-link" href="#" target="_blank" rel="noopener" hidden>Lihat karya <span class="round"><svg class="ico"><use href="#arrow"/></svg></span></a>
+          <div class="lb__nav" id="lb-nav">
+            <button type="button" id="lb-prev" aria-label="Proyek sebelumnya"><svg class="ico"><use href="#arrow"/></svg></button>
+            <span id="lb-count"></span>
+            <button type="button" id="lb-next" aria-label="Proyek berikutnya"><svg class="ico"><use href="#arrow"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <footer class="foot">
+      <svg class="ico"><use href="#paw"/></svg>
+      <p>© <span id="tahun">2026</span> Mario Andiko Dwi Saputra. Semangat terus mengukir prestasinya.</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
