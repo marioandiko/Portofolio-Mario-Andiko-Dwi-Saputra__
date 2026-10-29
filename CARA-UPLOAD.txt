@@ -1,0 +1,70 @@
+CARA UPLOAD KE GITHUB (versi 6, gabungan lengkap)
+
+APA YANG BERUBAH DI VERSI 5
+- Proyek: tiap kelompok hanya menampilkan SATU baris dulu. Tombol "Tampilkan karya lainnya" membuka
+  sisanya, lalu berubah jadi "Tampilkan lebih sedikit". Jumlah per baris menyesuaikan lebar layar.
+- Kartu yang tidak memenuhi satu baris ditata rata tengah (proyek dan sertifikat).
+- Animasi muncul sekarang berulang: saat digulir ke bawah DAN saat digulir kembali ke atas.
+- Poster lama (tombol "Tampilkan 22 poster lainnya") digabung ke tombol baru yang sama.
+- Halaman baru cek.html untuk memeriksa gambar mana yang belum terunggah (file kode juga diperiksa),
+  dan menunjukkan bagian paket mana yang harus diunggah.
+- Gambar yang gagal dimuat dicoba ulang otomatis; miniatur sertifikat (-t) yang hilang diganti gambar penuh.
+
+FILE YANG BERUBAH DIBANDING VERSI 4 (timpa yang lama)
+  index.html, script.js, extra.js, extra.css
+FILE BARU (tambahkan)
+  cek.html
+FILE YANG DIHAPUS
+  Tidak ada file kode yang dihapus. Folder gambar hanya dihapus kalau kamu memilih Cara B di bawah.
+FILE YANG TIDAK BERUBAH (tidak perlu diunggah ulang kalau repo sudah lengkap)
+  style.css, tema.css, kucing.css, kucing.js, links.js, .nojekyll, dan semua isi assets.
+
+---------------------------------------------------------------
+KENAPA GAMBAR PROYEK TIDAK TERBACA DI GITHUB
+Gambar proyek ada di assets/projects dan ikon aplikasinya di assets/logos. Keduanya berada di
+bagian yang berbeda dari foto kegiatan (assets/bukti). Foto kegiatan terbaca, gambar proyek tidak:
+artinya folder assets/projects dan assets/logos tidak ada di repo (biasanya ikut terhapus saat
+folder "assets" lama dihapus, lalu hanya sertifikat dan bukti yang diunggah ulang).
+File gambarnya sendiri lengkap dan namanya cocok semua (sudah dicek, 200 dari 200 terbaca).
+
+LANGKAH PERIKSA (1 menit)
+1. Setelah deploy, buka alamat situsmu lalu tambahkan /cek.html di belakangnya.
+2. Folder yang merah = belum ada di repo. Unggah ulang bagian yang sesuai (tabel di bawah).
+3. Cek juga manual: buka repo di GitHub > folder assets. Harus ada 7 folder:
+   bukti, logos, organisasi, poster, projects, sertifikat, social  (+ foto.jpg dan foto-hero.jpg)
+
+---------------------------------------------------------------
+CARA A (paling cepat): hanya memperbaiki yang kurang
+1. Add file > Upload files. Dari "bagian-1-kode" pilih SEMUA isinya, seret. Commit changes. (timpa file lama)
+2. Cek cek.html. Untuk folder yang merah, unggah bagiannya:
+   - assets/projects atau assets/poster merah   -> bagian-4-proyek-poster
+   - assets/logos, organisasi, social merah     -> bagian-5-logo-organisasi-social
+   - assets/sertifikat merah                    -> bagian-2-sertifikat
+   - assets/bukti merah                         -> bagian-3-bukti
+   Caranya: buka bagiannya, seret FOLDER "assets" ke halaman Upload files, Commit changes.
+
+CARA B (bersih total, kalau masih berantakan)
+1. Di GitHub hapus folder assets (buka folder > titik tiga > Delete directory > Commit).
+2. Unggah kelima bagian satu per satu (maksimal 100 file per unggahan, jadi dipecah):
+     bagian-1-kode                     (13 file)
+     bagian-2-sertifikat               (78 file)
+     bagian-3-bukti                    (40 file)
+     bagian-4-proyek-poster            (45 file)
+     bagian-5-logo-organisasi-social   (35 file)
+   Untuk bagian 2 sampai 5: seret folder "assets" di dalamnya. Setelah selesai, tidak ada yang tertimpa
+   karena tiap bagian mengisi subfolder yang berbeda.
+3. Settings > Pages > Source: Deploy from a branch > main / (root). Tunggu 1-2 menit, lalu Ctrl+F5.
+
+CARA C (paling gampang, tanpa batas 100 file): GitHub Desktop
+Pasang GitHub Desktop, clone repo, salin ISI folder "pratinjau-lokal" ke folder repo (timpa),
+lalu Commit dan Push. Semua file ikut sekaligus.
+
+PRATINJAU DI KOMPUTER (Live Server)
+Buka folder "pratinjau-lokal" (gabungan semuanya), lalu Go Live pada index.html.
+Jangan membuka satu bagian saja, karena gambarnya tersebar di beberapa bagian.
+
+UBAH JUMLAH YANG TAMPIL AWAL
+Buka extra.js, cari RULES. 'row' berarti satu baris. Angka (misalnya 6) berarti jumlah kartu.
+
+ISI TAUTAN SOSMED
+Buka links.js, tempel alamat postingan di antara tanda kutip pada baris gambar yang sesuai.
