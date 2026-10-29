@@ -139,7 +139,7 @@
     names.forEach(function (n) {
       var li = document.createElement('li');
       var im = document.createElement('img');
-      im.src = 'assets/logos/' + n + '.png';
+      im.src = 'logos/' + n + '.png';
       im.alt = '';
       li.appendChild(im);
       li.appendChild(document.createTextNode(TOOLS[n] || n));
@@ -231,7 +231,7 @@ Array.prototype.forEach.call(document.querySelectorAll('a[data-noop]'), function
 (function () {
   'use strict';
   var L = window.LINKS || {};
-  var ICON = { instagram: 'assets/social/instagram.png', youtube: 'assets/social/youtube.png', facebook: 'assets/social/facebook.png' };
+  var ICON = { instagram: 'social/instagram.png', youtube: 'social/youtube.png', facebook: 'social/facebook.png' };
   function icon(u) {
     for (var k in ICON) { if (u.indexOf(k) > -1) return ICON[k]; }
     return '';
